@@ -4,7 +4,8 @@
   "description": "IPTV App for TizenBrew",
   "main": "service.js",
   "scripts": {
-    "start": "node service.js"
+    "start": "node service.js",
+    "build": "esbuild service.js --bundle --platform=node --outfile=dist/service.bundle.js"
   },
   "dependencies": {
     "axios": "^1.6.8",
@@ -22,5 +23,8 @@
     "Enter",
     "Return"
   ],
-  "serviceFile": "service.js"
+  "serviceFile": "dist/service.bundle.js",
+  "devDependencies": {
+    "esbuild": "^0.27.3"
+  }
 }
