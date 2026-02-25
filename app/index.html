@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1920, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>TyzBrew IPTV</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- HLS.js for m3u8 playback on Tizen Chromium 56 -->
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@1.4.12/dist/hls.min.js"></script>
+</head>
+<body>
+    <div id="app">
+        <!-- Main UI Container -->
+        <div id="sidebar" class="view-layer">
+            <div class="logo">TyzBrew IPTV</div>
+            <ul id="main-menu" class="nav-menu">
+                <li class="nav-item focusable" data-action="live">Live TV</li>
+                <li class="nav-item focusable" data-action="movies">Movies</li>
+                <li class="nav-item focusable" data-action="series">Series</li>
+                <li class="nav-item focusable" data-action="favorites">Favorites</li>
+                <li class="nav-item focusable" data-action="settings">Settings</li>
+            </ul>
+        </div>
+
+        <div id="content-area" class="view-layer">
+            <!-- Dynamic Content Load Here -->
+            <div id="view-dashboard" class="content-view active">
+                <h1 id="welcome-message">Welcome to TyzBrew IPTV</h1>
+                <p>Please configure your M3U or Xtream Codes in settings.</p>
+            </div>
+            
+            <div id="view-list" class="content-view">
+                <h2 id="list-title">Category</h2>
+                <div id="item-grid" class="grid-container"></div>
+            </div>
+
+            <div id="view-settings" class="content-view">
+                <h2>Settings & Playlists</h2>
+                <div class="settings-form">
+                    <button id="btn-add-playlist" class="focusable nav-item">Add Playlist</button>
+                    <div id="playlists-container"></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="player-container" class="view-layer hidden">
+            <video id="video-player" controls preload="auto"></video>
+            <div id="player-osd" class="osd active">
+                <h2 id="osd-title">Channel Name</h2>
+                <!-- Video Controls handled by Tizen Remote later -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/api.js"></script>
+    <script src="js/parser.js"></script>
+    <script src="js/player.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

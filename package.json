@@ -1,0 +1,26 @@
+{
+  "name": "tyzbrw-iptv",
+  "version": "1.0.0",
+  "description": "IPTV App for TizenBrew",
+  "main": "service.js",
+  "scripts": {
+    "start": "node service.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.8",
+    "cors": "^2.8.5",
+    "express": "^4.19.2"
+  },
+  "packageType": "app",
+  "appName": "TyzBrew IPTV",
+  "appPath": "app/index.html",
+  "keys": [
+    "ArrowUp",
+    "ArrowDown",
+    "ArrowLeft",
+    "ArrowRight",
+    "Enter",
+    "Return"
+  ],
+  "serviceFile": "service.js"
+}
