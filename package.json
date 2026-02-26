@@ -1,7 +1,7 @@
 {
   "name": "tyzbrw-iptv",
-  "version": "1.0.2",
-  "description": "IPTV App for TizenBrew",
+  "version": "1.0.3",
+  "description": "IPTV App for TizenBrew 2026",
   "main": "service.js",
   "scripts": {
     "start": "node service.js",
