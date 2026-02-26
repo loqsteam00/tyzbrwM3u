@@ -1,6 +1,6 @@
 {
   "name": "tyzbrw-iptv",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "IPTV App for TizenBrew 2026",
   "main": "service.js",
   "scripts": {
