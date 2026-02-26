@@ -1,6 +1,6 @@
 {
   "name": "tyzbrw-iptv",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "IPTV App for TizenBrew 2026",
   "main": "service.js",
   "scripts": {
@@ -15,14 +15,7 @@
   "packageType": "app",
   "appName": "TyzBrew IPTV",
   "appPath": "app/index.html",
-  "keys": [
-    "ArrowUp",
-    "ArrowDown",
-    "ArrowLeft",
-    "ArrowRight",
-    "Enter",
-    "Return"
-  ],
+  "keys": [],
   "serviceFile": "dist/service.bundle.js",
   "devDependencies": {
     "esbuild": "^0.27.3"
